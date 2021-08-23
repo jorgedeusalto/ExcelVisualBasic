@@ -1,0 +1,11 @@
+Sub openbtn1()
+
+Dim v As String
+Dim Shex As Object'create a shell object
+   'Range("H20").Select
+   Set Shex = CreateObject("Shell.Application")
+   v = Range("H6").Value
+   tgtfile = v
+   Shex.Open (tgtfile)
+   'Shex.Open (v)
+End Sub
